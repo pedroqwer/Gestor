@@ -1,0 +1,119 @@
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" version="1.0">
+
+    <named-query name="CuentaBancaria.findByUsuario">
+        <query>
+            SELECT c
+            FROM CuentaBancaria c
+            WHERE c.usuario.id = :usuario
+        </query>
+    </named-query>
+
+    <!-- Presupuesto -->
+    <named-query name="Presupuesto.findPresupuestoByPerfilAndFecha">
+        <query>
+            SELECT p
+            FROM Presupuesto p
+            WHERE p.perfil.id = :perfilId
+            AND p.fecha = :fecha
+        </query>
+    </named-query>
+
+    <named-query name="Presupuesto.findAllByUser">
+        <query>
+            select p
+            from Presupuesto p
+            where p.perfil.id =:id_User ORDER BY p.fecha DESC
+        </query>
+    </named-query>
+
+    <!--named-query name="Presupuesto.findByPerfilId">
+        <query>
+            SELECT p
+            FROM Presupuesto p
+            WHERE p.perfil.id = :perfilId ORDER BY p.fecha DESC
+        </query>
+    </named-query-->
+
+    <named-query name="Presupuesto.presupuestoactualuser">
+        <query>
+            <![CDATA[
+        select p
+        from Presupuesto p
+        where p.perfil.id = :perfilId
+        and FUNCTION('MONTH', p.fecha) = :currentMonth
+        and FUNCTION('YEAR', p.fecha) = :currentYear
+        ORDER BY p.fecha DESC
+        ]]>
+        </query>
+    </named-query>
+
+    <!-- Transaccion -->
+    <named-query name="Movimientos.findAllByUsuario">
+        <query>
+            SELECT t
+            FROM Movimientos t
+            WHERE t.perfil.id = :idUsuario ORDER BY t.fecha DESC
+        </query>
+    </named-query>
+
+    <named-query name="Movimientos.filterByCategoria">
+        <query>
+            SELECT t
+            FROM Movimientos t
+            WHERE t.perfil.id = :idUsuario
+            AND t.tipo = :tipo
+        </query>
+    </named-query>
+
+
+    <named-query name="Movimientos.obtenerTotalIngresos">
+        <query>
+            SELECT COALESCE(SUM(t.cantidad), 0)
+            FROM Movimientos t
+            INNER JOIN t.perfil per
+            WHERE per.id = ?1 AND t.tipo = 0
+        </query>
+    </named-query>
+
+    <named-query name="Movimientos.obtenerTotalGastos">
+        <query>
+            SELECT COALESCE(SUM(t.cantidad), 0)
+            FROM Movimientos t
+            INNER JOIN t.perfil per
+            WHERE per.id = ?1 AND t.tipo = 1
+        </query>
+    </named-query>
+
+    <named-query name="Auditoria.findAllByUserAuditoria">
+        <query>
+            select a
+            from Auditoria a
+            where a.perfil.id =:perfilId
+        </query>
+    </named-query>
+
+    <named-query name="Perfil.obtenertelefonobyid">
+        <query>
+            select p.telefono
+            from Perfil p
+            where p.id =:id
+        </query>
+    </named-query>
+
+    <named-query name="Perfil.obtenerIdByUsernameAndPass">
+        <query>
+            SELECT p.id
+            FROM Perfil p
+            WHERE p.id = (SELECT u.id FROM Usuario u WHERE u.username = :username AND u.password = :password)
+        </query>
+    </named-query>
+
+    <named-query name="CuentaBancaria.tieneCuenta">
+        <query>
+            SELECT CASE WHEN COUNT(c) > 0 THEN TRUE ELSE FALSE END
+            FROM CuentaBancaria c
+            WHERE c.usuario.id = :usuarioId
+        </query>
+    </named-query>
+
+</entity-mappings>

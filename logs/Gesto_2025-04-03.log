@@ -1,0 +1,273 @@
+2025-04-03 19:52:21.480 [restartedMain] INFO  c.example.Gestor.GestorApplication.logStarting - Starting GestorApplication v1.0 using Java 19.0.2 with PID 5620 (C:\Users\Sanchez\Downloads\Gestor\target\classes started by Sanchez in C:\Users\Sanchez\Downloads\Gestor)
+2025-04-03 19:52:21.503 [restartedMain] INFO  c.example.Gestor.GestorApplication.logStartupProfileInfo - The following 1 profile is active: "dev"
+2025-04-03 19:52:21.668 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-03 19:52:21.669 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-03 19:52:24.637 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03 19:52:24.900 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 240 ms. Found 8 JPA repository interfaces.
+2025-04-03 19:52:26.823 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port 8080 (http)
+2025-04-03 19:52:26.855 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+2025-04-03 19:52:26.856 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-03 19:52:27.014 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+2025-04-03 19:52:27.015 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 5343 ms
+2025-04-03 19:52:27.842 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03 19:52:29.224 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+2025-04-03 19:52:29.629 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@12038156
+2025-04-03 19:52:29.636 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+2025-04-03 19:52:29.720 [restartedMain] WARN  o.m.jdbc.message.server.ErrorPacket.warn - Error: 1193-HY000: Unknown system variable 'WSREP_ON'
+2025-04-03 19:52:29.761 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor.info - Database: jdbc:mariadb://localhost/control_gastos?user=mariadb2&password=******** (MariaDB 10.11)
+2025-04-03 19:52:29.957 [restartedMain] INFO  o.f.core.internal.command.DbValidate.info - Successfully validated 6 migrations (execution time 00:00.137s)
+2025-04-03 19:52:29.994 [restartedMain] INFO  o.f.core.internal.command.DbMigrate.info - Current version of schema `control_gastos`: 5
+2025-04-03 19:52:30.035 [restartedMain] INFO  o.f.core.internal.command.DbMigrate.info - Migrating schema `control_gastos` to version "6"
+2025-04-03 19:52:30.226 [restartedMain] INFO  o.f.core.internal.command.DbMigrate.info - Successfully applied 1 migration to schema `control_gastos`, now at version v6 (execution time 00:00.129s)
+2025-04-03 19:52:30.520 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03 19:52:30.721 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-03 19:52:30.875 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator.initiateService - HHH000026: Second-level cache disabled
+2025-04-03 19:52:33.254 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03 19:52:33.472 [restartedMain] INFO  o.hibernate.orm.connections.pooling.initiateService - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 10.11.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-03 19:52:33.494 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6ea19906) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3fbc2bbc)
+2025-04-03 19:52:33.496 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4fe57910) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@bd8a550)
+2025-04-03 19:52:33.498 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@69d36484) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@376c43c9)
+2025-04-03 19:52:33.500 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@532591cd) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1d194cdc)
+2025-04-03 19:52:33.501 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6f1cecbf) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3a3b989e)
+2025-04-03 19:52:33.502 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@45efcded) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@12c71620)
+2025-04-03 19:52:33.503 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1a3679d3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7c2ffd63)
+2025-04-03 19:52:33.504 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4794d7ae) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6dc8bf6a)
+2025-04-03 19:52:33.505 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4419abe1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@47de82e4)
+2025-04-03 19:52:36.918 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03 19:52:38.877 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 19:52:44.283 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory.<clinit> - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-03 19:52:49.300 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer.configure - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-04-03 19:52:49.303 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-04-03 19:52:51.228 [restartedMain] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry.requestMatchers - One of the patterns in [api/buscar/{perfilId}/{fecha}] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-04-03 19:52:51.251 [restartedMain] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry.requestMatchers - One of the patterns in [api/porcentaje-gastado/{usuarioId}] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-04-03 19:52:53.640 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+2025-04-03 19:52:53.798 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port 8080 (http) with context path '/'
+2025-04-03 19:52:53.831 [restartedMain] INFO  c.example.Gestor.GestorApplication.logStarted - Started GestorApplication in 34.096 seconds (process running for 36.727)
+2025-04-03 19:52:54.128 [restartedMain] DEBUG org.hibernate.SQL.logStatement - 
+    select
+        p1_0.`id`,
+        p1_1.`activo`,
+        p1_1.`creación`,
+        p1_1.`password`,
+        p1_1.`fecha_ultimo_login`,
+        p1_1.`username`,
+        p1_0.`apellido`,
+        p1_0.`dni`,
+        p1_0.`email`,
+        p1_0.`nombre`,
+        p1_0.`telefono` 
+    from
+        `perfil` p1_0 
+    join
+        `usuario` p1_1 
+            on p1_0.`id`=p1_1.`id` 
+    where
+        p1_1.`username`=?
+2025-04-03 19:52:54.379 [restartedMain] DEBUG org.hibernate.SQL.logStatement - 
+    select
+        cb1_0.`id`,
+        cb1_0.`moneda`,
+        cb1_0.`saldo`,
+        cb1_0.`usuario_id`,
+        u1_0.`id`,
+        u1_1.`activo`,
+        u1_1.`creación`,
+        u1_1.`password`,
+        u1_1.`fecha_ultimo_login`,
+        u1_1.`username`,
+        u1_0.`apellido`,
+        u1_0.`dni`,
+        u1_0.`email`,
+        u1_0.`nombre`,
+        u1_0.`telefono`,
+        r1_0.`user_codigo`,
+        r1_1.`id`,
+        r1_1.`nombre` 
+    from
+        `cuenta_bancaria` cb1_0 
+    join
+        `perfil` u1_0 
+            on u1_0.`id`=cb1_0.`usuario_id` 
+    join
+        `usuario` u1_1 
+            on u1_0.`id`=u1_1.`id` 
+    left join
+        `user_role` r1_0 
+            on u1_1.`id`=r1_0.`user_codigo` 
+    left join
+        `role` r1_1 
+            on r1_1.`id`=r1_0.`role_id` 
+    where
+        cb1_0.`usuario_id`=?
+2025-04-03 19:52:54.500 [restartedMain] DEBUG org.hibernate.SQL.logStatement - 
+    select
+        t1_0.`is_perfil`,
+        t1_0.`id`,
+        t1_0.`cantidad`,
+        t1_0.`categoria_id`,
+        c1_0.`id`,
+        c1_0.`descripcion`,
+        c1_0.`tipo`,
+        t1_0.`descripcion`,
+        t1_0.`fecha` 
+    from
+        `transacciones` t1_0 
+    left join
+        `categorias` c1_0 
+            on c1_0.`id`=t1_0.`categoria_id` 
+    where
+        t1_0.`is_perfil`=?
+2025-04-03 19:52:54.523 [restartedMain] DEBUG org.hibernate.SQL.logStatement - 
+    select
+        r1_0.`user_codigo`,
+        r1_1.`id`,
+        r1_1.`nombre` 
+    from
+        `user_role` r1_0 
+    join
+        `role` r1_1 
+            on r1_1.`id`=r1_0.`role_id` 
+    where
+        r1_0.`user_codigo`=?
+2025-04-03 19:53:47.607 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown.shutDownGracefully - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-03 19:53:48.380 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown.doShutdown - Graceful shutdown complete
+2025-04-03 19:53:48.401 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 19:53:48.423 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+2025-04-03 19:53:48.533 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+2025-04-03 19:53:59.453 [restartedMain] INFO  c.example.Gestor.GestorApplication.logStarting - Starting GestorApplication v1.0 using Java 19.0.2 with PID 13680 (C:\Users\Sanchez\Downloads\Gestor\target\classes started by Sanchez in C:\Users\Sanchez\Downloads\Gestor)
+2025-04-03 19:53:59.470 [restartedMain] INFO  c.example.Gestor.GestorApplication.logStartupProfileInfo - The following 1 profile is active: "dev"
+2025-04-03 19:53:59.647 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-03 19:53:59.648 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-03 19:54:02.847 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03 19:54:03.175 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 307 ms. Found 8 JPA repository interfaces.
+2025-04-03 19:54:05.330 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port 8080 (http)
+2025-04-03 19:54:05.369 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+2025-04-03 19:54:05.371 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-03 19:54:05.515 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+2025-04-03 19:54:05.516 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 5866 ms
+2025-04-03 19:54:05.850 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03 19:54:06.283 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+2025-04-03 19:54:06.562 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@583446d8
+2025-04-03 19:54:06.567 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+2025-04-03 19:54:06.644 [restartedMain] WARN  o.m.jdbc.message.server.ErrorPacket.warn - Error: 1193-HY000: Unknown system variable 'WSREP_ON'
+2025-04-03 19:54:06.711 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor.info - Database: jdbc:mariadb://localhost/control_gastos?user=mariadb2&password=******** (MariaDB 10.11)
+2025-04-03 19:54:06.848 [restartedMain] INFO  o.f.c.i.s.JdbcTableSchemaHistory.info - Schema history table `control_gastos`.`flyway_schema_history` does not exist yet
+2025-04-03 19:54:06.858 [restartedMain] INFO  o.f.core.internal.command.DbValidate.info - Successfully validated 6 migrations (execution time 00:00.095s)
+2025-04-03 19:54:06.912 [restartedMain] INFO  o.f.c.i.s.JdbcTableSchemaHistory.info - Creating Schema History table `control_gastos`.`flyway_schema_history` ...
+2025-04-03 19:54:07.002 [restartedMain] INFO  o.f.core.internal.command.DbMigrate.info - Current version of schema `control_gastos`: << Empty Schema >>
+2025-04-03 19:54:07.030 [restartedMain] INFO  o.f.core.internal.command.DbMigrate.info - Migrating schema `control_gastos` to version "1"
+2025-04-03 19:54:07.047 [restartedMain] WARN  o.f.c.i.s.DefaultSqlScriptExecutor.warn - DB: Name 'pk_auditoria' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+2025-04-03 19:54:07.060 [restartedMain] WARN  o.f.c.i.s.DefaultSqlScriptExecutor.warn - DB: Name 'pk_categorias' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+2025-04-03 19:54:07.075 [restartedMain] WARN  o.f.c.i.s.DefaultSqlScriptExecutor.warn - DB: Name 'pk_cuenta_bancaria' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+2025-04-03 19:54:07.086 [restartedMain] WARN  o.f.c.i.s.DefaultSqlScriptExecutor.warn - DB: Name 'pk_historial_transacciones' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+2025-04-03 19:54:07.106 [restartedMain] WARN  o.f.c.i.s.DefaultSqlScriptExecutor.warn - DB: Name 'pk_perfil' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+2025-04-03 19:54:07.123 [restartedMain] WARN  o.f.c.i.s.DefaultSqlScriptExecutor.warn - DB: Name 'pk_presupuesto' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+2025-04-03 19:54:07.141 [restartedMain] WARN  o.f.c.i.s.DefaultSqlScriptExecutor.warn - DB: Name 'pk_role' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+2025-04-03 19:54:07.156 [restartedMain] WARN  o.f.c.i.s.DefaultSqlScriptExecutor.warn - DB: Name 'pk_transacciones' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+2025-04-03 19:54:07.175 [restartedMain] WARN  o.f.c.i.s.DefaultSqlScriptExecutor.warn - DB: Name 'pk_usuario' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+2025-04-03 19:54:07.588 [restartedMain] INFO  o.f.core.internal.command.DbMigrate.info - Migrating schema `control_gastos` to version "2"
+2025-04-03 19:54:07.598 [restartedMain] WARN  o.f.c.i.s.DefaultSqlScriptExecutor.warn - DB: Name 'pk_prestamo' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+2025-04-03 19:54:07.647 [restartedMain] INFO  o.f.core.internal.command.DbMigrate.info - Migrating schema `control_gastos` to version "3"
+2025-04-03 19:54:07.719 [restartedMain] INFO  o.f.core.internal.command.DbMigrate.info - Migrating schema `control_gastos` to version "4"
+2025-04-03 19:54:07.881 [restartedMain] INFO  o.f.core.internal.command.DbMigrate.info - Migrating schema `control_gastos` to version "5"
+2025-04-03 19:54:07.896 [restartedMain] WARN  o.f.c.i.s.DefaultSqlScriptExecutor.warn - DB: Name 'pk_transferencias' ignored for PRIMARY key. (SQL State:  - Error Code: 1280)
+2025-04-03 19:54:08.197 [restartedMain] INFO  o.f.core.internal.command.DbMigrate.info - Migrating schema `control_gastos` to version "6"
+2025-04-03 19:54:08.279 [restartedMain] INFO  o.f.core.internal.command.DbMigrate.info - Successfully applied 6 migrations to schema `control_gastos`, now at version v6 (execution time 00:01.073s)
+2025-04-03 19:54:08.667 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03 19:54:08.916 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-03 19:54:09.044 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator.initiateService - HHH000026: Second-level cache disabled
+2025-04-03 19:54:11.770 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03 19:54:12.055 [restartedMain] INFO  o.hibernate.orm.connections.pooling.initiateService - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 10.11.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-03 19:54:12.080 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7b89b9e6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6f3a00d2)
+2025-04-03 19:54:12.081 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@52191e6b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1cfae2c9)
+2025-04-03 19:54:12.082 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2a8a2e39) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1589872a)
+2025-04-03 19:54:12.083 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@f7929b6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@445e6e3a)
+2025-04-03 19:54:12.084 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3fde6b6e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@66371b68)
+2025-04-03 19:54:12.086 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@20c5aa81) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@17dd3f1d)
+2025-04-03 19:54:12.087 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5b14a393) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5a61fc2)
+2025-04-03 19:54:12.089 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@83a2c55) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@76e1df98)
+2025-04-03 19:54:12.091 [restartedMain] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry.addDescriptor - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@817f2ec) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3d7aa423)
+2025-04-03 19:54:16.308 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03 19:54:17.395 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 19:54:18.545 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory.<clinit> - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-03 19:54:20.371 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer.configure - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-04-03 19:54:20.372 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-04-03 19:54:21.391 [restartedMain] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry.requestMatchers - One of the patterns in [api/buscar/{perfilId}/{fecha}] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-04-03 19:54:21.400 [restartedMain] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry.requestMatchers - One of the patterns in [api/porcentaje-gastado/{usuarioId}] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-04-03 19:54:22.916 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+2025-04-03 19:54:23.083 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port 8080 (http) with context path '/'
+2025-04-03 19:54:23.117 [restartedMain] INFO  c.example.Gestor.GestorApplication.logStarted - Started GestorApplication in 26.051 seconds (process running for 30.091)
+2025-04-03 19:54:23.326 [restartedMain] DEBUG org.hibernate.SQL.logStatement - 
+    select
+        p1_0.`id`,
+        p1_1.`activo`,
+        p1_1.`creación`,
+        p1_1.`password`,
+        p1_1.`fecha_ultimo_login`,
+        p1_1.`username`,
+        p1_0.`apellido`,
+        p1_0.`dni`,
+        p1_0.`email`,
+        p1_0.`nombre`,
+        p1_0.`telefono` 
+    from
+        `perfil` p1_0 
+    join
+        `usuario` p1_1 
+            on p1_0.`id`=p1_1.`id` 
+    where
+        p1_1.`username`=?
+2025-04-03 19:54:23.423 [restartedMain] DEBUG org.hibernate.SQL.logStatement - 
+    select
+        r1_0.`id`,
+        r1_0.`nombre` 
+    from
+        `role` r1_0 
+    where
+        r1_0.`nombre`=?
+2025-04-03 19:54:23.714 [restartedMain] DEBUG org.hibernate.SQL.logStatement - 
+    insert 
+    into
+        `usuario`
+        (
+            `activo`, `creación`, `password`, `fecha_ultimo_login`, `username`
+        ) 
+    values
+        (?, ?, ?, ?, ?)
+2025-04-03 19:54:23.735 [restartedMain] DEBUG org.hibernate.SQL.logStatement - 
+    insert 
+    into
+        `perfil`
+        (
+            `apellido`, `dni`, `email`, `nombre`, `telefono`, `id`
+        ) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-04-03 19:54:23.779 [restartedMain] DEBUG org.hibernate.SQL.logStatement - 
+    insert 
+    into
+        `user_role`
+        (
+            `user_codigo`, `role_id`
+        ) 
+    values
+        (?, ?)
+2025-04-03 19:54:56.868 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown.shutDownGracefully - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-03 19:54:57.194 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown.doShutdown - Graceful shutdown complete
+2025-04-03 19:54:57.223 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 19:54:57.235 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+2025-04-03 19:54:57.247 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
