@@ -28,7 +28,6 @@ public class TransaccionService implements ITransaccionService {
 
     @Autowired
     private IAuditoriaRepository auditoriaRepository;
-    Auditoria auditoria = new Auditoria();
 
     @Override
     public Movimientos findById(long id) {
@@ -79,10 +78,11 @@ public class TransaccionService implements ITransaccionService {
             repositoryTransaccion.save(transaccion);
 
             // Guardar auditoría
+            Auditoria auditoria = new Auditoria();
             auditoria.setPerfil(perfil);
             auditoria.setAccion("Creación movimiento");
             auditoria.setFecha(LocalDateTime.now());
-            auditoria.setDetalles("El usuario " + perfil.getNombre() + " ha creado una transacción de tipo " + tipo + ".");
+            auditoria.setDetalles("El usuario " + perfil.getNombre() + " ha creado una transacción con la cantidad" + cantidad + ".");
 
             auditoriaRepository.save(auditoria);
 

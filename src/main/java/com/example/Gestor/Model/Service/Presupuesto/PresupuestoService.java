@@ -35,7 +35,6 @@ public class PresupuestoService implements IPresupuestoService {
 
     @Autowired
     private IAuditoriaRepository auditoriaRepository;
-    Auditoria auditoria = new Auditoria();
 
     @Override
     public List<Presupuesto> findAllByUser(long id_User) {
@@ -151,10 +150,11 @@ public class PresupuestoService implements IPresupuestoService {
 
             repositoryPresupuesto.save(presupuesto);
 
+            Auditoria auditoria = new Auditoria();
             auditoria.setPerfil(perfil);
             auditoria.setAccion("Creación presupuesto");
             auditoria.setFecha(LocalDateTime.now());
-            auditoria.setDetalles("El usuario " + perfil.getNombre() + " ha creado un presupuesto.");
+            auditoria.setDetalles("El usuario " + perfil.getNombre() + " ha creado un presupuesto con cantidad límite "+presupuesto.getCantidadLimite());
 
             auditoriaRepository.save(auditoria);
 
